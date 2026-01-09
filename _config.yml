@@ -1,0 +1,12 @@
+---
+title: April Goldberg
+timezone: America/New_York
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+sass:
+  style: compressed
