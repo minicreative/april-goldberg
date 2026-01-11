@@ -1,7 +1,13 @@
 {% include header.html %}
 
+    <div class="section heading">
+        <div class="container">
+            <h1>{{ page.title }}</h1>
+        </div>
+    </div>
+
     {% if page.content != '' %}
-    <div class="section page-content">
+    <div class="section">
         <div class="container">
             <div class="content">
                 {{ page.content | markdownify }}
@@ -16,7 +22,26 @@
             {% assign projects = site.projects | sort: "date" %}
             {% for project in projects %}
                 <div class="project">
-                    <h2>{{ project.title }}</h2>
+
+                    <div class="metadata">
+                        <h2><mark>{{ project.title }}</mark></h2>
+                        <div><i>Dir. {{ project.director }}</i></div>
+                        <div>{{ project.type }}</div>
+                        <div class="links">
+                            {% for link in project.links %}
+                                <a href="{{ link.url }}">{{ link.title }}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    {% if project.images.size > 0 %}
+                    <div class="images">
+                        {% for img in project.images %}
+                            <a href="{{ img }}" data-lightbox="{{ project.id }}"><img src="{{ img }}" /></a>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
                 </div>
             {% endfor %}
         </div>

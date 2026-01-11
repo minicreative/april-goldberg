@@ -5,4 +5,4 @@ position: 3
 layout: page
 ---
 
-Contact page
+This is sample content for the contact page.

@@ -2,7 +2,7 @@
 ---
 
 // Resets and Universal Classes ================================================
-html, body {margin:0px; padding:0px; width:100%; min-height:100%; overflow-x: hidden !important;}
+html, body {margin:0px; padding:0px; height:100%;}
 h1, h2, h3, h4, h5, h6 {margin:0px;}
 img {max-width:100%; border:0px;}
 a {text-decoration:none; color:inherit;}
@@ -28,26 +28,120 @@ input:focus, textarea:focus {outline:none;}
     }
 }
 
+// Colors
+$primary: #00367d;
+$accent: #f8db75;
+
+body {background:white;}
+
+// Fonts
+body {
+    font-family: "Figtree", sans-serif;
+    line-height:1.5;
+}
+h1 {
+    font-size:40px;
+}
+h2 {
+    font-size:28px;
+}
+h1, h2, h3 {
+    font-family: "Germania One", system-ui; 
+    font-weight: 400;
+    font-style: normal;
+}
+mark {
+    --mark-color: #f8db75;
+	--mark-skew: 0.25em;
+	--mark-height: 1.5em;
+	--mark-overlap: 0.4em;
+
+	margin-inline: calc(var(--mark-overlap) * -1);
+	padding-inline: var(--mark-overlap);
+	background-color: transparent;
+	background-image:
+		linear-gradient(
+			to bottom right,
+			transparent 50%,
+			var(--mark-color) 50%
+		),
+		linear-gradient(
+			var(--mark-color),
+			var(--mark-color)
+		),
+		linear-gradient(
+			to top left,
+			transparent 50%,
+			var(--mark-color) 50%
+		)
+	;
+	background-size:
+		var(--mark-skew) var(--mark-height),
+		calc(100% - var(--mark-skew) * 2 + 1px) var(--mark-height),
+		var(--mark-skew) var(--mark-height)
+	;
+	background-position:left center, center, right center;
+	background-repeat: no-repeat;
+	color: inherit;
+    -webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+}
+a mark {cursor:pointer;}
+
 // Reusable Styles
-.section {padding:50px 0px;}
+.section {margin-top:50px;}
 .container {
     position:relative; margin:0px auto; padding:0px 30px; max-width:1200px;
 }
-.rich-text {
-
+.content {
+    max-width:640px;
 }
 
 // Component Styles
 .header {
-    position:relative; padding:20px 0px;
+    position:relative; padding:25px 0px; border-bottom:1px solid #e5e5e5;
+    h1 {font-size:32px;}
     h1, .navigation a {line-height:30px;}
     .navigation {
-        position:absolute; top:0px; right:0px; text-align:right;
+        position:absolute; top:0px; right:30px; text-align:right;
+        a {display:inline-block; margin-left:20px; font-size:20px;}
     }
+}
+.footer {
+    border-top:1px solid #e5e5e5; padding:25px 0px;
 }
 
 // Template styles
 body.home {
     .header {display:none;}
+    .footer {display:none;}
+}
+.landing {
+    background:$primary;
+    height:100%; width:100%;
+    display:flex; justify-content:center; align-items:center; text-align:center;
+    h1 {font-size:128px;}
+    h2 {font-size:48px; margin-top:50px;}
+    .landing-nav {
+        margin-top:50px;
+        a {font-size:24px; display:inline-block; margin:0px 40px;}
+    }
+}
+
+.project {
+    position:relative; background:white;
+    margin-top:30px; padding:25px 0px; border:1px solid #e5e5e5; height:250px;
+    .metadata {
+        position:absolute; top:0px; left:0px; width:300px; height:100%; padding:25px;
+        background:rgba(255, 255, 255, 0.9);
+        .links {
+            position:absolute; bottom:25px;
+            a {margin-right:10px; border-bottom:1px solid #e5e5e5;}
+        }
+    }
+    .images {
+        padding-left:350px; overflow-y:scroll; white-space:nowrap;
+        img {display:inline-block; height:200px; margin-right:8px;}
+    }
 }
 
