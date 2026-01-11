@@ -14,7 +14,6 @@ collections:
   uploads:
     title: Uploads
     output: true
-footer: '&copy; 2026 April Goldberg '
 defaults:
 - scope:
     path: ''
@@ -23,8 +22,9 @@ defaults:
     director: ''
     type: ''
     links:
-      - title: ''
-        url: ''
+    - title: ''
+      url: ''
     images: []
+footer: "&copy; 2026 April Goldberg "
 sass:
   style: compressed
