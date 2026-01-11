@@ -5,12 +5,12 @@ collections:
   posts:
     title: Posts
     output: true
-  types:
-    title: Types
-    output: true
   projects:
     title: Projects
     output: false
+  types:
+    title: Types
+    output: true
   uploads:
     title: Uploads
     output: true
