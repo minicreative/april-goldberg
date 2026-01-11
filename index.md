@@ -2,6 +2,6 @@
 title: Home
 permalink: "/"
 layout: home
+subtitle: Cinematographer
+position: 0
 ---
-
-Hello, world!

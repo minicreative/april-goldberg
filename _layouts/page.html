@@ -1,0 +1,26 @@
+{% include header.html %}
+
+    {% if page.content != '' %}
+    <div class="section page-content">
+        <div class="container">
+            <div class="content">
+                {{ page.content | markdownify }}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if page.listProjects %}
+    <div class="section projects">
+        <div class="container">
+            {% assign projects = site.projects | sort: "date" %}
+            {% for project in projects %}
+                <div class="project">
+                    <h2>{{ project.title }}</h2>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+    
+{% include footer.html %}

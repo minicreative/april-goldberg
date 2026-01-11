@@ -12,7 +12,6 @@ input, textarea {border:0px; font-family:inherit; -webkit-appearance:none; appea
 input:focus, textarea:focus {outline:none;}
 .clear {clear:both;}
 
-
 // Breakpoint: reponsive adaptation mixin
 @mixin breakpoint($point) {
 	// tablet
@@ -29,5 +28,26 @@ input:focus, textarea:focus {outline:none;}
     }
 }
 
-// Styles
+// Reusable Styles
+.section {padding:50px 0px;}
+.container {
+    position:relative; margin:0px auto; padding:0px 30px; max-width:1200px;
+}
+.rich-text {
+
+}
+
+// Component Styles
+.header {
+    position:relative; padding:20px 0px;
+    h1, .navigation a {line-height:30px;}
+    .navigation {
+        position:absolute; top:0px; right:0px; text-align:right;
+    }
+}
+
+// Template styles
+body.home {
+    .header {display:none;}
+}
 

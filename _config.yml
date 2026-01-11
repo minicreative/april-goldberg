@@ -2,11 +2,22 @@
 title: April Goldberg
 timezone: America/New_York
 collections:
-  posts:
-    title: Posts
-    output: true
+  projects:
+    title: Projects
+    output: false
+  project-types:
+    title: Project Types
+    output: false
   uploads:
     title: Uploads
     output: true
+defaults:
+- scope:
+    path: ''
+    type: projects
+  values:
+    director: ''
+    type: ''
+    images: []
 sass:
   style: compressed
