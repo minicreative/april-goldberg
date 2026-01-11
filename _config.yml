@@ -5,9 +5,9 @@ collections:
   posts:
     title: Posts
     output: true
-  project-types:
-    title: Project Types
-    output: false
+  types:
+    title: Types
+    output: true
   projects:
     title: Projects
     output: false
