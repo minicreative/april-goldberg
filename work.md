@@ -1,6 +1,6 @@
 ---
 title: Work
-permalink: "/work"
+permalink: "/work/"
 position: 1
 layout: page
 listProjects: true
