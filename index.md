@@ -1,7 +1,8 @@
 ---
 title: Home
 permalink: "/"
+position: 0
 layout: home
 subtitle: Cinematographer
-position: 0
 ---
+

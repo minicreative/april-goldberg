@@ -2,11 +2,14 @@
 title: April Goldberg
 timezone: America/New_York
 collections:
-  projects:
-    title: Projects
-    output: false
+  posts:
+    title: Posts
+    output: true
   project-types:
     title: Project Types
+    output: false
+  projects:
+    title: Projects
     output: false
   uploads:
     title: Uploads
