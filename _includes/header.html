@@ -29,11 +29,11 @@
 
 		<div class="header">
 			<div class="container">
-				<a href="/"><h1><mark>{{ site.title }}</mark></h1></a>
+				<a href="/"><h1>{{ site.title }}</h1></a>
 				<div class="navigation">
 					{% assign pages = site.html_pages | sort: "position" %}
 					{% for page in pages %}
-						<a href="{{ page.url }}"><mark>{{ page.title }}</mark></a>
+						<a href="{{ page.url }}">{{ page.title }}</a>
 					{% endfor %}
 				</div>
 			</div>

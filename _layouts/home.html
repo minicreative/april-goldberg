@@ -2,12 +2,11 @@
 
     <div class="landing">
         <div>
-            <h1><mark>{{ site.title }}</mark></h1>
-            <h2><mark>{{ page.subtitle }}</mark></h2>
+            <h1>{{ page.heading }}</h1>
             <div class="landing-nav">
                 {% assign pages = site.html_pages | sort: "position" %}
                 {% for page in pages %}{% if page.layout != "home" %}
-                    <a href="{{ page.url }}"><mark>{{ page.title }}</mark></a>
+                    <a href="{{ page.url }}">{{ page.title }}</a>
                 {% endif %}{% endfor %}
             </div>
         </div>

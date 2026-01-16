@@ -50,46 +50,9 @@ h1, h2, h3 {
     font-weight: 400;
     font-style: normal;
 }
-mark {
-    --mark-color: #f8db75;
-	--mark-skew: 0.25em;
-	--mark-height: 1.5em;
-	--mark-overlap: 0.4em;
-
-	margin-inline: calc(var(--mark-overlap) * -1);
-	padding-inline: var(--mark-overlap);
-	background-color: transparent;
-	background-image:
-		linear-gradient(
-			to bottom right,
-			transparent 50%,
-			var(--mark-color) 50%
-		),
-		linear-gradient(
-			var(--mark-color),
-			var(--mark-color)
-		),
-		linear-gradient(
-			to top left,
-			transparent 50%,
-			var(--mark-color) 50%
-		)
-	;
-	background-size:
-		var(--mark-skew) var(--mark-height),
-		calc(100% - var(--mark-skew) * 2 + 1px) var(--mark-height),
-		var(--mark-skew) var(--mark-height)
-	;
-	background-position:left center, center, right center;
-	background-repeat: no-repeat;
-	color: inherit;
-    -webkit-box-decoration-break: clone;
-	box-decoration-break: clone;
-}
-a mark {cursor:pointer;}
 
 // Reusable Styles
-.section {margin-top:50px;}
+.section {margin-top:80px;}
 .container {
     position:relative; margin:0px auto; padding:0px 30px; max-width:1200px;
 }
@@ -99,12 +62,12 @@ a mark {cursor:pointer;}
 
 // Component Styles
 .header {
-    position:relative; padding:25px 0px; border-bottom:1px solid #e5e5e5;
-    h1 {font-size:32px;}
+    position:relative; margin-top:36px;
+    h1 {font-size:42px;}
     h1, .navigation a {line-height:30px;}
     .navigation {
         position:absolute; top:0px; right:30px; text-align:right;
-        a {display:inline-block; margin-left:20px; font-size:20px;}
+        a {display:inline-block; margin-left:20px; font-size:22px;}
     }
 }
 .footer {
@@ -117,31 +80,35 @@ body.home {
     .footer {display:none;}
 }
 .landing {
-    background:$primary;
+    background:$primary; color:white;
     height:100%; width:100%;
     display:flex; justify-content:center; align-items:center; text-align:center;
-    h1 {font-size:128px;}
-    h2 {font-size:48px; margin-top:50px;}
+    h1 {font-size:120px;}
+    h2 {font-size:48px; margin-top:40px;}
     .landing-nav {
-        margin-top:50px;
-        a {font-size:24px; display:inline-block; margin:0px 40px;}
+        margin-top:40px;
+        a {font-size:24px; font-weight:bold; display:inline-block; margin:0px 40px; 
+            background:white; color:$primary; padding:12px 20px;
+            border-radius:30px;
+        }
     }
 }
 
 .project {
     position:relative; background:white;
-    margin-top:30px; padding:25px 0px; border:1px solid #e5e5e5; height:250px;
+    margin-top:30px; height:240px;
     .metadata {
-        position:absolute; top:0px; left:0px; width:300px; height:100%; padding:25px;
+        position:absolute; top:0px; left:0px; width:270px; height:100%;
         background:rgba(255, 255, 255, 0.9);
         .links {
-            position:absolute; bottom:25px;
+            position:absolute; bottom:0px;
             a {margin-right:10px; border-bottom:1px solid #e5e5e5;}
         }
     }
     .images {
-        padding-left:350px; overflow-y:scroll; white-space:nowrap;
-        img {display:inline-block; height:200px; margin-right:8px;}
+        padding-left:300px; overflow-y:scroll; white-space:nowrap; 
+        -ms-overflow-style: none; scrollbar-width: none;
+        img {display:inline-block; height:240px; margin-right:8px;}
     }
 }
 
