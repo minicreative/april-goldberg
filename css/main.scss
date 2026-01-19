@@ -54,7 +54,7 @@ h1, h2, h3 {
 // Reusable Styles
 .section {margin-top:80px;}
 .container {
-    position:relative; margin:0px auto; padding:0px 30px; max-width:1200px;
+    position:relative; margin:0px auto; padding:0px 30px; max-width:1500px;
 }
 .content {
     max-width:640px;
@@ -109,9 +109,10 @@ body.home {
         -ms-overflow-style: none; scrollbar-width: none;
         img {display:inline-block; height:240px; margin-right:8px;}
     }
-    #scrollImages {
-        position:absolute; right:20px; top:100px; z-index:20;
+    .scrollImages {
+        position:absolute; right:20px; top:100px; z-index:20; cursor:pointer;
         font-size:24px; color:white; text-shadow:0px 0px 4px rgba(0,0,0,0.4);
+        &:hover {text-shadow:0px 0px 8px rgba(0,0,0,0.6);}
     }
 }
 

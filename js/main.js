@@ -3,9 +3,12 @@ $(document).ready(() => {
 })
 
 function setupScrollImages() {
-    let isScrolling = false;
-    $("#scrollImages").on('mouseover', () => {
-    })
-    $("#scrollImages").on('mouseout', () => {
+    $(".scrollImages").on('click', function () {
+        let images = $(this).prev("div")[0]
+        if (images == undefined) return
+        let position = $(images).scrollLeft()
+        $(images).animate({
+            scrollLeft: position + 300
+        }, 800)
     })
 }
