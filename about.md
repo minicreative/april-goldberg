@@ -5,6 +5,8 @@ position: 2
 layout: page
 ---
 
+![](/uploads/sample-headshot.jpg)
+
 This is sample content for the about page.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis feugiat condimentum. Donec molestie non dolor ut vehicula. Quisque condimentum egestas tellus in lacinia. Vivamus semper tellus a ligula efficitur, et eleifend risus bibendum. Phasellus imperdiet libero ac justo lobortis, at molestie est commodo. Cras interdum congue pretium. Nunc a orci arcu. Nunc tempor, diam sed facilisis eleifend, erat metus ultrices massa, ac sagittis nulla velit eu dui.
