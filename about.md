@@ -3,6 +3,13 @@ title: Info
 permalink: "/info/"
 position: 2
 layout: page
+socialLinks:
+  - url: https://gogole.com
+    icon: fa-brands fa-imdb
+  - url: https://google.com
+    icon: fa-brands fa-instagram
+  - url: mailto:agoldberg97@gmail.com
+    icon: fa-solid fa-envelope
 ---
 
 ![](/uploads/sample-headshot.jpg)

@@ -10,6 +10,18 @@
     </div>
     {% endif %}
 
+    {% if page.socialLinks %}
+    <div class="section small">
+        <div class="container">
+            <div class="social-links">
+                {% for link in page.socialLinks %}
+                    <a href="{{ link.url }}"><i class="{{ link.icon }}"></i></a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
     {% if page.listProjects %}
     <div class="section projects">
         <div class="container">
