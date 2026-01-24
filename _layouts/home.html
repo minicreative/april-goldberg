@@ -4,10 +4,9 @@
         <div>
             <h1>{{ page.heading }}</h1>
             <div class="landing-nav">
-                {% assign pages = site.html_pages | sort: "position" %}
-                {% for page in pages %}{% if page.layout != "home" %}
-                    <a href="{{ page.url }}">{{ page.title }}</a>
-                {% endif %}{% endfor %}
+                {% for button in page.buttons %}
+                    <a href="{{ button.url }}">{{ button.title }}</a>
+                {% endfor %}
             </div>
         </div>
     </div>
