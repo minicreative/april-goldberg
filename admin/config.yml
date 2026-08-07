@@ -11,14 +11,60 @@ collections:
   - name: "page"
     label: "Pages"
     create: false
-    sortable_fields: ['title', 'order']
+    sortable_fields: ['title', 'position']
+    fields:
+      - { label: Layout, name: layout, widget: hidden, default: page}
+      - { label: Title, name: title, widget: string}
+      - { label: Position, name: position, widget: number }
+      - { label: URL, name: permalink, widget: string }
     files: 
       - file: "index.md"
         label: "Home"
         name: "home"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Content, name: body, widget: markdown}
+          - {label: Heading, name: heading, widget: string}
+      - file: "about.md"
+        label: "About"
+        name: "about"
+        fields:
+          - label: Social Media
+            name: socialLinks
+            widget: object
+            fields:
+              - { label: URL, name: url, widget: string }
+              - { label: Font Awesome Icon, name: icon, widget: string }
+  - name: "project"
+    label: "Projects"
+    create: true
+    sortable_fields: ['title']
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Director, name: director, widget: string }
+      - label: Type
+        name: type
+        widget: relation
+        collection: types
+        value_field: title
+      - label: Links
+        name: links
+        widget: object
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: URL, name: url, widget: string }
+      - label: Images
+        name: images
+        widget: list
+        field: image
+        allow_add: true
+        allow_remove: true
+        allow_reorder: true
+  - name: "type"
+    label: "Types"
+    create: true
+    sortable_fields: ['title']
+    fields:
+      - { label: Title, name: title, widget: string }
+
 
 
           
