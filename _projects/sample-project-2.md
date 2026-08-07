@@ -8,9 +8,9 @@ links:
 - title: Website
   url: https://google.com
 images:
-- "/uploads/sample3.jpg"
-- "/uploads/sample1.jpg"
-- "/uploads/sample2.jpg"
-- "/uploads/sample5.jpg"
+- url: "/uploads/sample3.jpg"
+- url: "/uploads/sample1.jpg"
+- url: "/uploads/sample2.jpg"
+- url: "/uploads/sample5.jpg"
 ---
 

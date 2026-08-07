@@ -1,8 +1,28 @@
 backend:
-  name: github
-  repo: minicreative/april-goldberg
-  branch: main
-  base_url: https://github-auth.tomasroy.com/
+  name: test-repo
+# backend:
+#   name: github
+#   repo: minicreative/april-goldberg
+#   branch: main
+#   base_url: https://github-auth.tomasroy.com/
+default_fields: 
+  layout_field: &layout_field
+    label: Layout
+    name: layout
+    widget: hidden
+    default: page
+  title_field: &title_field
+    label: Title
+    name: title
+    widget: string
+  position_field: &position_field
+    label: Position
+    name: position
+    widget: number
+  permalink_field: &permalink_field
+    label: URL
+    name: permalink
+    widget: string
 editor:
   preview: false
 media_folder: "_uploads"
@@ -12,31 +32,46 @@ collections:
     label: "Pages"
     create: false
     sortable_fields: ['title', 'position']
-    fields:
-      - { label: Layout, name: layout, widget: hidden, default: page}
-      - { label: Title, name: title, widget: string}
-      - { label: Position, name: position, widget: number }
-      - { label: URL, name: permalink, widget: string }
     files: 
       - file: "index.md"
         label: "Home"
         name: "home"
         fields:
+          - *layout_field
+          - *title_field
+          - *position_field
+          - *permalink_field
           - {label: Heading, name: heading, widget: string}
       - file: "about.md"
         label: "About"
         name: "about"
         fields:
+          - *layout_field
+          - *title_field
+          - *position_field
+          - *permalink_field
+          - label: Page Content
+            name: Content
+            widget: markdown
           - label: Social Media
             name: socialLinks
             widget: object
             fields:
               - { label: URL, name: url, widget: string }
               - { label: Font Awesome Icon, name: icon, widget: string }
+      - file: "work.md"
+        label: "Work"
+        name: "work"
+        fields:
+          - *layout_field
+          - *title_field
+          - *position_field
+          - *permalink_field
   - name: "project"
     label: "Projects"
     create: true
     sortable_fields: ['title']
+    folder: "projects"
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Director, name: director, widget: string }
@@ -45,6 +80,7 @@ collections:
         widget: relation
         collection: types
         value_field: title
+        search_fields: [title]
       - label: Links
         name: links
         widget: object
@@ -54,7 +90,7 @@ collections:
       - label: Images
         name: images
         widget: list
-        field: image
+        field: { label: Image, name: url, widget: image }
         allow_add: true
         allow_remove: true
         allow_reorder: true
@@ -62,6 +98,7 @@ collections:
     label: "Types"
     create: true
     sortable_fields: ['title']
+    folder: "types"
     fields:
       - { label: Title, name: title, widget: string }
 

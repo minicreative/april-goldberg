@@ -6,9 +6,9 @@ links:
 - title: Trailer
   url: https://google.com
 images:
-- "/uploads/sample4.jpg"
-- "/uploads/sample5.jpg"
-- "/uploads/sample2.jpg"
-- "/uploads/sample1.jpg"
+- url: "/uploads/sample4.jpg"
+- url: "/uploads/sample5.jpg"
+- url: "/uploads/sample2.jpg"
+- url: "/uploads/sample1.jpg"
 ---
 
