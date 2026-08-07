@@ -1,10 +1,10 @@
-backend:
-  name: test-repo
 # backend:
-#   name: github
-#   repo: minicreative/april-goldberg
-#   branch: main
-#   base_url: https://github-auth.tomasroy.com/
+#   name: test-repo
+backend:
+  name: github
+  repo: minicreative/april-goldberg
+  branch: main
+  base_url: https://github-auth.tomasroy.com/
 default_fields: 
   layout_field: &layout_field
     label: Layout
