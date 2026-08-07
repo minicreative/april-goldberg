@@ -71,7 +71,7 @@ collections:
     label: "Projects"
     create: true
     sortable_fields: ['title']
-    folder: "projects"
+    folder: "_projects"
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Director, name: director, widget: string }
@@ -98,7 +98,7 @@ collections:
     label: "Types"
     create: true
     sortable_fields: ['title']
-    folder: "types"
+    folder: "_types"
     fields:
       - { label: Title, name: title, widget: string }
 
