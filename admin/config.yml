@@ -76,12 +76,15 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Director, name: director, widget: string }
-      - label: Type
+      # - label: Type
+      #   name: type
+      #   widget: relation
+      #   collection: "types"
+      #   value_field: "title"
+      #   search_fields: ["title"]
+      - label: Project Type
         name: type
-        widget: relation
-        collection: "types"
-        value_field: "title"
-        search_fields: ["title"]
+        widget: string
       - label: Links
         name: links
         widget: list
