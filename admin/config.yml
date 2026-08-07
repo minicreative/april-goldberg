@@ -51,7 +51,7 @@ collections:
           - *position_field
           - *permalink_field
           - label: Page Content
-            name: Content
+            name: body
             widget: markdown
           - label: Social Media
             name: socialLinks
