@@ -1,12 +1,10 @@
 ---
-title: Sample Project 1
-director: Sample Director
-type: Documentary
-links:
-  - title: Trailer
-    url: https://google.com
+title: Sinclair
+director: Laine Rettmer
+type: Video Art
+links: []
 images:
-  - url: /uploads/sample4.jpg
-  - url: /uploads/sample2.jpg
-  - url: /uploads/sample1.jpg
+  - uploads/screenshot-2025-06-21-at-5.23.07 pm.png
+  - uploads/screenshot-2025-06-21-at-5.04.34 pm.png
+  - uploads/screenshot-2025-06-21-at-5.11.52 pm.png
 ---
