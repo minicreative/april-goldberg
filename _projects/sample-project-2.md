@@ -2,11 +2,7 @@
 title: Lucas and Iris Save the World
 director: Keith Miller
 type: Feature Film
-links:
-  - title: Trailer
-    url: https://google.com
-  - title: Website
-    url: https://google.com
+links: []
 images:
   - uploads/1.73.1_1.73.1.jpg
   - uploads/1.83.1_1.83.1.jpg
