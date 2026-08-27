@@ -1,7 +1,7 @@
 ---
 title: Lucas and Iris Save the World
-director: Sample Director
-type: Music Video
+director: Keith Miller
+type: Feature Film
 links:
   - title: Trailer
     url: https://google.com
