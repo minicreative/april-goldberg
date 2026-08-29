@@ -32,6 +32,7 @@ default_fields:
     label: Content / Description
     name: body
     widget: richtext
+    required: false
 editor:
   preview: false
 media_folder: "_uploads"
