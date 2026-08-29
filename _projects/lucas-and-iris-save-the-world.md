@@ -21,4 +21,4 @@ images:
   - /uploads/1.29.1_1.29.1.jpg
   - /uploads/1.118.1_1.118.1.jpg
 ---
-This is sample content! You can have **rich text** and [links](https://google.com) too.
+Digital.
