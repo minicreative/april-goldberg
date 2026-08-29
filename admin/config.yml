@@ -80,7 +80,6 @@ collections:
     fields:
       - *layout_field
       - *title_field
-      - *permalink_field
       - *position_field
       - { label: Director, name: director, widget: string }
       - label: Project Type
