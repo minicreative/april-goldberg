@@ -26,9 +26,9 @@ default_fields:
     name: permalink
     widget: string
   content_field: &content_field
-    label: Page Content
+    label: Content / Description
     name: body
-    widget: markdown
+    widget: richtext
 editor:
   preview: false
 media_folder: "_uploads"

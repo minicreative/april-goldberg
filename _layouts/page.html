@@ -33,7 +33,7 @@
                         <h2>{{ project.title }}</h2>
                         <div><i>Dir. {{ project.director }}</i></div>
                         <div>{{ project.type }}</div>
-                        <div class="content">{{ page.body }}</div>
+                        <div class="content">{{ project.content | markdownify }}</div>
                         <div class="links">
                             {% for link in project.links %}
                                 <a href="{{ link.url }}">{{ link.title }}</a>
@@ -49,6 +49,8 @@
                     </div>
                     <div class="scrollImages"><i class="fa-solid fa-circle-arrow-right"></i></div>
                     {% endif %}
+
+                    <div style="clear:both"></div>
 
                 </div>
             {% endfor %}
