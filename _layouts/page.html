@@ -33,6 +33,7 @@
                         <h2>{{ project.title }}</h2>
                         <div><i>Dir. {{ project.director }}</i></div>
                         <div>{{ project.type }}</div>
+                        <div class="content">{{ page.body }}</div>
                         <div class="links">
                             {% for link in project.links %}
                                 <a href="{{ link.url }}">{{ link.title }}</a>
