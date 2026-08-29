@@ -75,7 +75,7 @@ collections:
   - name: "project"
     label: "Project"
     create: true
-    sortable_fields: ['title']
+    sortable_fields: ['position']
     folder: "_projects"
     fields:
       - *layout_field
