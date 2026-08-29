@@ -1,6 +1,6 @@
 ---
 title: Sinclair
-position: 0.9
+position: 1
 director: Laine Rettmer
 type: Video Art
 links: []
