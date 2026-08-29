@@ -12,7 +12,7 @@ socialLinks:
     icon: fa-solid fa-envelope
 ---
 
-![](/uploads/sample-headshot.jpg)
+![This is a sample headshot](/uploads/1.73.1_1.73.1.jpg)
 
 This is sample content for the about page.
 

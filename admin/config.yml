@@ -5,6 +5,8 @@ backend:
   repo: minicreative/april-goldberg
   branch: main
   base_url: https://github-auth.tomasroy.com/
+  media_folder: "uploads"
+  public_folder: "/uploads"
 default_fields: 
   layout_field: &layout_field
     label: Layout
@@ -74,14 +76,11 @@ collections:
     sortable_fields: ['title']
     folder: "_projects"
     fields:
-      - { label: Title, name: title, widget: string }
+      - *layout_field
+      - *title_field
+      - *permalink_field
+      - *position_field
       - { label: Director, name: director, widget: string }
-      # - label: Type
-      #   name: type
-      #   widget: relation
-      #   collection: "types"
-      #   value_field: "title"
-      #   search_fields: ["title"]
       - label: Project Type
         name: type
         widget: string
@@ -100,13 +99,6 @@ collections:
         allow_add: true
         allow_remove: true
         allow_reorder: true
-  - name: "type"
-    label: "Type"
-    create: true
-    sortable_fields: ['title']
-    folder: "_types"
-    fields:
-      - { label: Title, name: title, widget: string }
 
 
 
