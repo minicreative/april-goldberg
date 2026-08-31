@@ -1,5 +1,5 @@
 ---
-title: Sinclair
+title: West of the Sun
 position: 1
 director: Laine Rettmer
 type: Video Art
