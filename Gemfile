@@ -1,4 +1,6 @@
 source "https://rubygems.org"
 gem 'jekyll-sitemap'
 gem 'kramdown-parser-gfm'
-gem "jekyll-resize", git: "https://github.com/MichaelCurrin/jekyll-resize"
+group :jekyll_plugins do
+  gem "jekyll-resize", git: "https://github.com/MichaelCurrin/jekyll-resize"
+end
