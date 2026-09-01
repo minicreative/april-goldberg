@@ -6,6 +6,7 @@ jobs:
     with:
       docker_name: ${{ vars.docker_name }}
       kube_deployment: ${{ vars.kube_deployment }}
+      install_image_magick: ${{ vars.install_image_magick }}
     secrets:
       docker_username: ${{ secrets.docker_username }}
       docker_password: ${{ secrets.docker_password }}
