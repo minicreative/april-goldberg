@@ -44,7 +44,7 @@
                     {% if project.images.size > 0 %}
                     <div class="images">
                         {% for img in project.images %}
-                            <a href="{{ img }}" data-lightbox="{{ project.id }}"><img src="{{ img }}" /></a>
+                            <a href="{{ img }}" data-lightbox="{{ project.id }}"><img src="{{ img | resize: '600x600' }}" /></a>
                         {% endfor %}
                     </div>
                     <div class="scrollImages"><i class="fa-solid fa-circle-arrow-right"></i></div>
