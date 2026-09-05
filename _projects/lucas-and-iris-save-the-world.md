@@ -11,7 +11,7 @@ images:
   - /uploads/1.105.1_1.105.1.jpg
   - /uploads/1.96.1_1.96.1.jpg
   - /uploads/1.33.1_1.33.1.jpg
-  - /uploads/1.90.1_1.90.1.jpg
+  - uploads/1.90.1_1.90.1.jpeg
   - /uploads/1.46.1_1.46.1.jpg
   - /uploads/1.67.1_1.67.1.jpg
   - /uploads/1.78.1_1.78.1.jpg
