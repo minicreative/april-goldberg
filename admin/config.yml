@@ -98,6 +98,7 @@ collections:
       - *layout_field
       - *title_field
       - *position_field
+      - { label: Hidden?, name: hidden, widget: boolean }
       - { label: Director, name: director, widget: string }
       - label: Project Type
         name: type
