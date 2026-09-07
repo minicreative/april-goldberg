@@ -1,18 +1,17 @@
 ---
-title: Info
-permalink: "/info/"
-position: 2
 layout: page
+title: Info
+position: 1
+permalink: /info/
 socialLinks:
-  - url: https://gogole.com
+  - url: https://www.imdb.com/name/nm14230861/?_ssoLoop=1
     icon: fa-brands fa-imdb
-  - url: https://google.com
+  - url: https://www.instagram.com/aprilzgoldberg/
     icon: fa-brands fa-instagram
   - url: mailto:agoldberg97@gmail.com
     icon: fa-solid fa-envelope
 ---
-
-![This is a sample headshot](/uploads/1.73.1_1.73.1.jpg)
+![](uploads/jks00459.jpg)
 
 This is sample content for the about page.
 
