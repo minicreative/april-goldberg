@@ -11,7 +11,7 @@ socialLinks:
   - url: mailto:agoldberg97@gmail.com
     icon: fa-solid fa-envelope
 ---
-![](uploads/jks00459.jpg)
+![](/uploads/jks00459.jpg)
 
 This is sample content for the about page.
 
