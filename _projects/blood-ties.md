@@ -16,5 +16,8 @@ images:
   - uploads/screenshot-2026-09-07-at-9.55.38 am.jpg
   - uploads/screenshot-2026-09-06-at-3.19.51 pm.jpg
   - uploads/screenshot-2026-09-06-at-3.08.45 pm.jpg
+  - uploads/screenshot-2026-09-07-at-12.03.38 pm.jpeg
+  - uploads/screenshot-2026-09-07-at-12.03.05 pm.jpeg
+  - uploads/screenshot-2026-09-07-at-12.02.34 pm.jpeg
 ---
 Digital. Pan Up Productions
