@@ -1,12 +1,6 @@
-# backend:
-#   name: test-repo
-backend:
-  name: github
-  repo: minicreative/april-goldberg
-  branch: main
-  base_url: https://github-auth.tomasroy.com/
-  media_folder: "uploads"
-  public_folder: "/uploads"
+
+# Default Fields =====================================================
+
 default_fields: 
   layout_field: &layout_field
     label: Layout
@@ -33,10 +27,27 @@ default_fields:
     name: body
     widget: richtext
     required: false
+
+# Backend Configuration ==============================================================
+ 
+# backend:
+#   name: test-repo
+
+backend:
+  name: github
+  repo: minicreative/april-goldberg
+  branch: main
+  base_url: https://github-auth.tomasroy.com/
+
+# Top-Level Editor Configuration =====================================================
+
 editor:
   preview: false
-media_folder: "_uploads"
-public_folder: "uploads"
+media_folder: "uploads"
+public_folder: "/uploads"
+
+# Site-Level Collections Configuration =====================================================
+
 collections:
   - name: "page"
     label: "Pages"

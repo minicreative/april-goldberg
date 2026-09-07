@@ -15,6 +15,7 @@ collections:
   uploads:
     title: Uploads
     output: true
+    directory: "/uploads"
 defaults:
 - scope:
     path: ''
