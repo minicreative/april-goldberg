@@ -51,6 +51,7 @@ public_folder: "/uploads"
 collections:
   - name: "page"
     label: "Pages"
+    label_singular: "Page"
     create: false
     sortable_fields: ['title', 'position']
     files: 
@@ -88,7 +89,8 @@ collections:
           - *position_field
           - *permalink_field
   - name: "project"
-    label: "Project"
+    label: "Projects"
+    label_singular: "Project"
     create: true
     sortable_fields: ['position']
     folder: "_projects"
