@@ -148,7 +148,7 @@ body.home {
         position:absolute; top:0px; left:0px; padding-left:300px; 
         overflow-y:scroll; white-space:nowrap; z-index:5;
         -ms-overflow-style: none; scrollbar-width: none;
-        img {display:inline-block; height:240px; margin-right:8px;}
+        img {display:inline-block; height:240px; margin-right:8px; max-width:none;}
     }
     .scrollImages {
         position:absolute; right:20px; top:100px; z-index:20; cursor:pointer;
