@@ -17,5 +17,9 @@ images:
   - /uploads/screenshot-2025-06-21-at-5.50.24 pm.jpg
   - /uploads/screenshot-2025-06-21-at-5.44.07 pm.jpg
   - /uploads/screenshot-2025-06-21-at-5.44.47 pm.jpg
+  - /uploads/screenshot-2025-06-21-at-5.55.16 pm.jpg
+  - /uploads/screenshot-2025-06-21-at-5.58.53 pm.jpg
+  - /uploads/screenshot-2025-06-21-at-6.21.42 pm.jpg
+  - /uploads/screenshot-2025-06-21-at-6.25.04 pm.jpg
 ---
 16mm. Museum of Fine Arts Boston, Unbound Visual Arts Gallery
