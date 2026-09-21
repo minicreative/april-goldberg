@@ -12,5 +12,8 @@ images:
   - /uploads/img_1484.png
   - /uploads/img_5089.png
   - /uploads/img_0036.png
+  - /uploads/img_2818.png
+  - /uploads/img_2332.png
+  - /uploads/img_4413.png
 ---
 MiniDV.
