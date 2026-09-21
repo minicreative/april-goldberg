@@ -3,6 +3,6 @@ title: Bury It
 position: 3
 hidden: false
 director: David Olonoff
-type: Narrative Short Film, digital.
+type: Narrative Short Film
 ---
-Chicago Horror Film Festival, New York Shorts International Film Festival, Big Apple Film Festival, Phobia Film Fest, Winter Film Festival, Artists and Beers
+Digital. Chicago Horror Film Festival, New York Shorts International Film Festival, Big Apple Film Festival, Phobia Film Fest, Winter Film Festival, Artists and Beers
