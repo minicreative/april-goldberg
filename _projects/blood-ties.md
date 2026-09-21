@@ -1,6 +1,6 @@
 ---
 title: Blood Ties
-position: 4
+position: 6
 hidden: false
 director: Mackenzie Jamieson
 type: Narrative Short Film
