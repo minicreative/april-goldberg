@@ -1,6 +1,13 @@
 $(document).ready(() => {
+    setupLightbox()
     setupScrollImages()
 })
+
+function setupLightbox() {
+    lightbox.option({
+        wrapAround: true,
+    })
+}
 
 function setupScrollImages() {
     $(".scrollImages").on('click', function () {
