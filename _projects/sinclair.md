@@ -4,7 +4,6 @@ position: 1
 hidden: false
 director: Laine Rettmer
 type: Video Art
-links: []
 images:
   - /uploads/screenshot-2025-06-21-at-5.23.07 pm.jpg
   - /uploads/screenshot-2025-06-21-at-5.31.29 pm.jpg

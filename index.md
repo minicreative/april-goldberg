@@ -3,7 +3,8 @@ title: Home
 permalink: "/"
 position: 0
 layout: home
-heading: April Zapata Goldberg, DP
+heading: April Zapata Goldberg
+subheading: cinematographer
 buttons:
 - url: /work
   title: Work

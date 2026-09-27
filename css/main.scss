@@ -46,7 +46,6 @@ h2 {
     font-size:28px;
 }
 h1, h2, h3 {
-    font-family: "Germania One", system-ui; 
     font-weight: 400;
     font-style: normal;
 }
@@ -86,8 +85,8 @@ h1, h2, h3 {
     h1 {font-size:42px;}
     h1, .navigation a {line-height:30px;}
     .navigation {
-        position:absolute; top:0px; right:30px; text-align:right;
-        a {display:inline-block; margin-left:20px; font-size:22px;}
+        text-align:center;
+        a {display:inline-block; margin:0px 60px; font-size:18px; text-transform:lowercase;}
     }
     @include breakpoint(s) {
         h1 {font-size:36px;}
@@ -108,13 +107,15 @@ body.home {
 }
 .landing {
     background:$primary; color:white; 
-    height:100%; width:100%;
+    min-height:100%; padding:60px 0px; width:100%;
     display:flex; justify-content:center; align-items:center; text-align:center;
-    h1 {font-size:9vw;}
+    h1, h2 {font-family: "Charm", cursive; }
+    h1 {font-size:13vw; text-transform: uppercase; line-height:1;}
+    h2 {font-size:6vw;}
     .landing-nav {
         margin-top:40px;
         a {font-size:24px; font-weight:bold; display:inline-block; margin:0px 40px; 
-            background:white; color:$primary; padding:12px 20px;
+            border:2px solid white; color:white; padding:12px 20px;
             border-radius:30px;
         }
     }
@@ -136,10 +137,12 @@ body.home {
 }
 .project {
     position:relative; background:white; width:100%;
-    margin-top:30px; min-height:240px;
+    margin-top:30px; min-height:300px;
     .metadata {
-        position:relative; width:270px; z-index:10; min-height:240px;
+        position:relative; width:270px; z-index:10; min-height:300px;
         background:rgba(255, 255, 255, 0.9);
+        h2 {font-size:18px; margin-bottom:10px;}
+        font-size:14px; line-height:1.1;
         .links {
             position:absolute; bottom:0px;
             a {margin-right:10px; border-bottom:1px solid #e5e5e5;}
@@ -149,13 +152,14 @@ body.home {
         position:absolute; top:0px; left:0px; width:100%; padding-left:300px; 
         overflow-y:scroll; white-space:nowrap; z-index:5;
         -ms-overflow-style: none; scrollbar-width: none;
-        img {display:inline-block; height:240px; margin-right:8px; max-width:none;}
+        img {display:inline-block; height:300px; margin-right:8px; max-width:none;}
     }
     .scrollImages {
-        position:absolute; right:20px; top:100px; z-index:20; cursor:pointer;
-        font-size:24px; color:white; text-shadow:0px 0px 4px rgba(0,0,0,0.4);
-        &:hover {text-shadow:0px 0px 8px rgba(0,0,0,0.6);}
+        visibility: hidden;
+        position:absolute; right:0px; top:0px; z-index:20; cursor:pointer; 
+        width:25px; height:100%; background:rgba(255, 255, 255, 0.9)
     }
+    &:hover .scrollImages {visibility: visible;}
 
     @include breakpoint(s) {
         height:auto;
@@ -164,8 +168,8 @@ body.home {
             .links {position:relative; margin-top:10px;}
         }
         .images {
-            position:relative; top:auto; left:auto; padding-left:0px; margin-top:20px;
-            img {height:180px;}
+            position:relative; top:auto; left:auto; padding-left:0px;
+            img {height:280px;}
         }
         .scrollImages {
             top:auto; bottom:80px; right:10px;

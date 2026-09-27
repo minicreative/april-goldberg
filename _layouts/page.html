@@ -34,11 +34,13 @@
                         <div><i>Dir. {{ project.director }}</i></div>
                         <div>{{ project.type }}</div>
                         <div class="content">{{ project.content | markdownify }}</div>
-                        <div class="links">
-                            {% for link in project.links %}
-                                <a href="{{ link.url }}">{{ link.title }}</a>
-                            {% endfor %}
-                        </div>
+                        {% if project.links and project.links.size > 0 %}
+                            <div class="links">
+                                {% for link in project.links %}
+                                    <a href="{{ link.url }}">{{ link.title }}</a>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
                     </div>
 
                     {% if project.images.size > 0 %}
@@ -47,7 +49,7 @@
                             <a href="{{ img }}" data-lightbox="{{ project.id }}"><img src="{{ img | resize: '600x600' }}" /></a>
                         {% endfor %}
                     </div>
-                    <div class="scrollImages"><i class="fa-solid fa-circle-arrow-right"></i></div>
+                    <div class="scrollImages"></div>
                     {% endif %}
 
                     <div style="clear:both"></div>

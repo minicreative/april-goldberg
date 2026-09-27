@@ -3,7 +3,6 @@ title: Lucas and Iris Save the World
 position: 2
 director: Keith Miller
 type: Feature Film
-links: []
 images:
   - /uploads/1.73.1_1.73.1.jpg
   - /uploads/1.72.1_1.72.1.jpg
