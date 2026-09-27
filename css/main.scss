@@ -120,13 +120,15 @@ body.home {
         }
     }
     @include breakpoint(m) {
-        h1 {font-size:120px; line-height:140px;}
+        h1 {font-size:110px;}
+        h2 {font-size:40px;}
         .landing-nav {
             a {margin:0px 30px;}
         }
     }
     @include breakpoint(s) {
-        h1 {font-size:90px; line-height:100px;}
+        h1 {font-size:75px;}
+        h2 {font-size:30px;}
         .landing-nav {
             a {margin:0px 20px;}
         }
