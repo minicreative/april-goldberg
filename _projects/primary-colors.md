@@ -9,5 +9,6 @@ images:
   - /uploads/img_3846.jpeg
   - /uploads/img_2169.jpeg
   - /uploads/img_8674.jpeg
+  - /uploads/image.jpeg
 ---
 16mm & Digital.
