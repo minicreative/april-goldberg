@@ -1,6 +1,6 @@
 ---
 title: Bury It
-position: 3
+position: 4
 hidden: false
 director: David Olonoff
 type: Narrative Short Film
