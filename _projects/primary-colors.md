@@ -1,7 +1,7 @@
 ---
 title: Primary Colors
 position: 5
-hidden: true
+hidden: false
 director: Aaron Huey
 type: Experimental Short Film
 images:
